@@ -48,6 +48,7 @@ const Model = () => {
     </group>
   );
 };
+
 function App() {
   useEffect(() => {
     const locoScroll = new LocomotiveScroll({
@@ -106,7 +107,7 @@ function App() {
   return (
     <div>
         <div className='fixed w-screen h-screen top-0 left-0 z-[30] pointer-events-none'>
-          <Canvas style={{ border: "1px solid black" }}>
+          <Canvas>
           <ambientLight intensity={0.2} />
           <spotLight position={[10, 15, 10]} angle={0.3} />
           <Suspense fallback={null}>
